@@ -26,7 +26,7 @@ app = FastAPI(title="SoutraFood API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # En developpement, on autorise tout
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
